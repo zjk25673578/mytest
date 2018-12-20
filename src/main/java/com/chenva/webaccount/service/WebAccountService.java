@@ -1,6 +1,6 @@
 package com.chenva.webaccount.service;
 
-import com.chenva.webaccount.entity.WebAccount;
+import com.chenva.webaccount.model.WebAccount;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface WebAccountService extends IService<WebAccount> {
 

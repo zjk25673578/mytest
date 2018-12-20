@@ -1,6 +1,6 @@
 package com.chenva.homemember.service;
 
-import com.chenva.homemember.entity.HomeMember;
+import com.chenva.homemember.model.HomeMember;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface HomeMemberService extends IService<HomeMember> {
 

@@ -1,6 +1,6 @@
 package com.chenva.education.service;
 
-import com.chenva.education.entity.Education;
+import com.chenva.education.model.Education;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface EducationService extends IService<Education> {
 

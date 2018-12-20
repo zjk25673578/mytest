@@ -1,7 +1,7 @@
 package com.chenva.works.service.impl;
 
-import com.chenva.works.entity.Works;
-import com.chenva.works.mapper.WorksMapper;
+import com.chenva.works.model.Works;
+import com.chenva.works.dao.WorksMapper;
 import com.chenva.works.service.WorksService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 @Service
 public class WorksServiceImpl extends ServiceImpl<WorksMapper, Works> implements WorksService {

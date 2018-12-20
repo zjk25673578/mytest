@@ -1,8 +1,6 @@
 package com.test.mytest;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import com.chenva.users.entity.Users;
+import com.chenva.users.model.Users;
 import com.chenva.users.service.UsersService;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +12,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Logger;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -25,7 +22,7 @@ public class MytestApplicationTests {
 
     private Users u;
     private Users user;
-    private List<Users> users;
+    private List<Users> userList;
 
     @Before
     public void before() {
@@ -38,7 +35,7 @@ public class MytestApplicationTests {
         u.setStatus(1);
         u.setCreatetime(new Date());
 
-        users = new ArrayList<>();
+        userList = new ArrayList<>();
         for (int i = 1; i <= 1000; i++) {
             user = new Users();
             user.setUname("testName" + i);
@@ -48,17 +45,20 @@ public class MytestApplicationTests {
             user.setSetups(1);
             user.setStatus(1);
             user.setCreatetime(new Date());
-            users.add(user);
+            userList.add(user);
         }
     }
 
     @Test
+    public void test() {
+        Integer i = usersService.newCount();
+        System.out.println(i);
+    }
+
     public void save() {
         boolean r = usersService.save(u);
         System.out.println(r);
-        System.out.println(123);
     }
-
 
 }
 

@@ -31,7 +31,7 @@ public class MpGenerator {
         gc.setOutputDir("src\\main\\java");
         gc.setFileOverride(true);// 是否覆盖同名文件，默认是false
         gc.setActiveRecord(false);// 不需要ActiveRecord特性的请改为false, 每个实体类中包含各自的CRUD的方法
-        gc.setEnableCache(true);// XML 二级缓存
+        gc.setEnableCache(false);// XML 二级缓存
         gc.setBaseResultMap(false);// XML ResultMap
         gc.setBaseColumnList(false);// XML columList
         /* 自定义文件命名，注意 %s 会自动填充表实体属性！ */
@@ -93,11 +93,11 @@ public class MpGenerator {
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.chenva");
         // pc.setModuleName("mh_users");
-        // pc.setController("controller");
-        // pc.setEntity("model");
-        // pc.setMapper("dao");
-        // pc.setXml("dao.mapper");
-        // pc.setServiceImpl("service.impl");
+        pc.setController("controller");
+        pc.setEntity("model");
+        pc.setMapper("dao");
+        pc.setXml("dao.mapper");
+        pc.setServiceImpl("service.impl");
         mpg.setPackageInfo(pc);
 
         // 注入自定义配置，可以在 VM 中使用 cfg.abc 【可无】

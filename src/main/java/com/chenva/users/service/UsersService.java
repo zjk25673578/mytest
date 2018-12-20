@@ -1,6 +1,6 @@
 package com.chenva.users.service;
 
-import com.chenva.users.entity.Users;
+import com.chenva.users.model.Users;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface UsersService extends IService<Users> {
 
+    Integer newCount();
 }

@@ -1,6 +1,6 @@
 package com.chenva.menu.service;
 
-import com.chenva.menu.entity.Menu;
+import com.chenva.menu.model.Menu;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface MenuService extends IService<Menu> {
 

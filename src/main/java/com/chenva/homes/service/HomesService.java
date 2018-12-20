@@ -1,6 +1,6 @@
 package com.chenva.homes.service;
 
-import com.chenva.homes.entity.Homes;
+import com.chenva.homes.model.Homes;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface HomesService extends IService<Homes> {
 

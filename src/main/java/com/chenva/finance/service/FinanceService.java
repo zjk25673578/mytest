@@ -1,6 +1,6 @@
 package com.chenva.finance.service;
 
-import com.chenva.finance.entity.Finance;
+import com.chenva.finance.model.Finance;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface FinanceService extends IService<Finance> {
 

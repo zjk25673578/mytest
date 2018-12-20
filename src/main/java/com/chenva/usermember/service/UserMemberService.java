@@ -1,6 +1,6 @@
 package com.chenva.usermember.service;
 
-import com.chenva.usermember.entity.UserMember;
+import com.chenva.usermember.model.UserMember;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface UserMemberService extends IService<UserMember> {
 

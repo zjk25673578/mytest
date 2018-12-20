@@ -1,7 +1,7 @@
 package com.chenva.dict.service.impl;
 
-import com.chenva.dict.entity.Dict;
-import com.chenva.dict.mapper.DictMapper;
+import com.chenva.dict.model.Dict;
+import com.chenva.dict.dao.DictMapper;
 import com.chenva.dict.service.DictService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 @Service
 public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements DictService {

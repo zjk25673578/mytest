@@ -12,7 +12,7 @@ public class MyPluginForMyBatisPlus {
         packageName.put("service", "service");
         packageName.put("impl", "service\\impl");
         packageName.put("controller", "controller");
-        build("com.chenva", packageName, true);
+        build("com.chenva", true);
     }
 
     /**

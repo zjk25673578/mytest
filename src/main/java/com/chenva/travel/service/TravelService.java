@@ -1,6 +1,6 @@
 package com.chenva.travel.service;
 
-import com.chenva.travel.entity.Travel;
+import com.chenva.travel.model.Travel;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 public interface TravelService extends IService<Travel> {
 

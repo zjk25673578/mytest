@@ -1,7 +1,7 @@
 package com.chenva.homemember.service.impl;
 
-import com.chenva.homemember.entity.HomeMember;
-import com.chenva.homemember.mapper.HomeMemberMapper;
+import com.chenva.homemember.model.HomeMember;
+import com.chenva.homemember.dao.HomeMemberMapper;
 import com.chenva.homemember.service.HomeMemberService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author zjk
- * @since 2018-12-19
+ * @since 2018-12-20
  */
 @Service
 public class HomeMemberServiceImpl extends ServiceImpl<HomeMemberMapper, HomeMember> implements HomeMemberService {
